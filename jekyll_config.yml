@@ -1,0 +1,35 @@
+# Table of Contents
+# -----------------
+
+toc:
+  - head: /index.html
+    body: []
+
+  - head: /section1/index.html
+    body:
+     - /section1/page1.html
+     - /section1/page2.html
+
+  - head: /section2/index.html
+    body:
+     - /section2/page1.html
+     - /section2/page2.html
+
+# Jekyll Configuration
+# --------------------
+
+source      : src/pages
+posts       : ../posts
+layouts     : ../layouts
+includes    : ../includes
+
+destination : dist
+plugins     : jekyll_plugins
+
+keep_files  : [ 'css', 'js', 'images' ]
+
+permalink   : /:categories/:year/:month/:day/:title
+
+safe        : false
+pygments    : true
+markdown    : kramdown

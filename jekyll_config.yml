@@ -21,7 +21,6 @@ toc:
 source      : src/pages
 posts       : ../posts
 layouts     : ../layouts
-includes    : ../includes
 
 destination : dist
 plugins     : jekyll_plugins

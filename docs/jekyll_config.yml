@@ -1,0 +1,40 @@
+# Table of Contents
+# -----------------
+
+toc:
+  - head: /index.html
+    body:
+     - /intro/hello.html
+
+  - head: /setup/index.html
+    body:
+     - /setup/projects.html
+     - /setup/configurations.html
+
+  - head: /asts/index.html
+    body:
+     - /asts/quasiquotes.html
+
+  - head: /types/index.html
+    body: []
+
+  - head: /debugging/index.html
+    body: []
+
+# Jekyll Configuration
+# --------------------
+
+source      : src/pages
+posts       : ../posts
+layouts     : ../layouts
+
+destination : dist
+plugins     : jekyll_plugins
+
+keep_files  : [ 'css', 'js', 'images' ]
+
+permalink   : /:categories/:year/:month/:day/:title
+
+safe        : false
+pygments    : true
+markdown    : kramdown

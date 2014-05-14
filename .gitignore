@@ -1,10 +1,12 @@
-/bower_components/
-/node_modules/
-/_site/
+/code/**/target
 
-/static/css/screen.css
-/static/css/print.css
-/static/css/ie*.css
-/static/js/site.js
+/docs/bower_components/
+/docs/node_modules/
+/docs/_site/
+
+/docs/static/css/screen.css
+/docs/static/css/print.css
+/docs/static/css/ie*.css
+/docs/static/js/site.js
 
 .DS_Store

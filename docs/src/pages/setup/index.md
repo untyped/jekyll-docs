@@ -25,11 +25,3 @@ When writing a library that uses macros, separate compilation means we tend to p
  - Layering macros *on top* of the rest of our code means we don't have to pay special attention to separate compilation. Our library code defines macros but doesn't use them internally -- any use cases occur in a separate project or in unit tests (which are in a separate configuration).
 
  - Using macros *within* our library code requires us to split our codebase into multiple subprojects or configurations.
-
-## Macros and Scala Versions
-
-TODO: Using macros in Scala 2.10:
- - bring in quasiquotes via macro paradise;
-
-TODO: Using macros in Scala 2.11:
- - no macro paradise.

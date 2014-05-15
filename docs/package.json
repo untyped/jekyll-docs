@@ -9,15 +9,15 @@
     "grunt-contrib-less": "~0.6.4",
     "grunt-bower-task": "~0.3.0"
   },
-  "name": "jekyll-docs",
-  "description": "Template documentation site using Jekyll and Grunt.",
+  "name": "core-macros",
+  "description": "Tutorial for Scala.",
   "version": "0.0.0",
   "main": "dist/index.html",
   "dependencies": {
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/untyped/jekyll-docs.git"
+    "url": "git@ungit:projects/core-macros"
   },
   "author": "Dave Gurnell and Noel Welsh"
 }

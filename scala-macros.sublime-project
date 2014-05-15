@@ -11,23 +11,30 @@
     {
       "path": "code",
       "folder_exclude_patterns": [
+        "project",
+        "target"
       ]
     },
     {
       "path": "docs",
       "folder_exclude_patterns": [
-        "dist",
-        "core-scala",
+        "core-macros",
         "bower_components",
         "node_modules",
         "assets",
-        "jekyll_plugins"
+        "jekyll_plugins",
+        "src/pages"
       ],
       "file_exclude_patterns": [
         "Gemfile",
         "Gemfile.lock",
         ".ruby-version"
       ]
+    },
+    {
+      "path": "docs/src/pages",
+      "folder_exclude_patterns": [],
+      "file_exclude_patterns": []
     }
   ]
 }

@@ -3,9 +3,16 @@ layout: page
 title:  Using Multiple Configurations
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+TODO:
+ - example code
+    - `intro/hello` is a nice example
+    - macto defined in `main` configuration, used in `test` configuration
+ - what to do
+    - build.sbt
+       - import scala-reflect JAR
+    - macro file
+       - language feature import
+       - Context import
+       - macro bundle class
+    - use file
+       - just use the macro!

@@ -21,18 +21,20 @@ module.exports = (grunt) ->
           ]
           yuicompress: true
         files:
-          "dist/css/screen.css": "src/css/screen.less"
+          "core-macros/css/screen.css": "src/css/screen.less"
+          "core-macros/css/print.css" : "src/css/print.less"
 
     uglify:
       site:
         files:
-          "dist/js/site.js": [
+          "core-macros/js/site.js": [
             "bower_components/jquery/jquery.js"
             "bower_components/bootstrap/js/collapse.js"
             "bower_components/bootstrap/js/scrollspy.js"
             "bower_components/bootstrap/js/button.js"
             "bower_components/bootstrap/js/affix.js"
             "bower_components/respond/respond.src.js"
+            "src/js/site.js"
           ]
 
     copy:
@@ -41,14 +43,14 @@ module.exports = (grunt) ->
           expand: true
           cwd: "bower_components/bootstrap/img/"
           src: ["**"]
-          dest: "dist/images/"
+          dest: "core-macros/images/"
         }]
       images:
         files: [{
           expand: true
           cwd: "src/images"
           src: ["**"]
-          dest: "dist/images/"
+          dest: "core-macros/images/"
         }]
 
     exec:
@@ -99,7 +101,7 @@ module.exports = (grunt) ->
       server:
         options:
           port: 4000
-          base: 'dist'
+          base: 'core-macros'
 
   grunt.registerTask "build", [
     "less"

@@ -24,11 +24,13 @@ toc:
 # Jekyll Configuration
 # --------------------
 
+url         : http://underscore.io
+
 source      : src/pages
 posts       : ../posts
 layouts     : ../layouts
 
-destination : dist
+destination : core-macros
 plugins     : jekyll_plugins
 
 keep_files  : [ 'css', 'js', 'images' ]
@@ -36,5 +38,8 @@ keep_files  : [ 'css', 'js', 'images' ]
 permalink   : /:categories/:year/:month/:day/:title
 
 safe        : false
-pygments    : true
-markdown    : kramdown
+highligher  : true
+markdown    : redcarpet
+
+kramdown:
+  parse_block_html: true

@@ -523,9 +523,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 167.0,
 		"selected_items":
 		[
+			[
+				"scala",
+				"Set Syntax: Scala"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"lower",
 				"Convert Case: Lower Case"
@@ -567,16 +575,8 @@
 				"Pretty JSON: Format (Pretty Print) JSON"
 			],
 			[
-				"scala",
-				"Set Syntax: Scala"
-			],
-			[
 				"wrap",
 				"Word Wrap: Toggle"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"case",
@@ -676,8 +676,13 @@
 	},
 	"file_history":
 	[
-		"/Users/dave/dev/projects/scala-macros/docs/src/pages/setup/configurations.md",
 		"/Users/dave/dev/projects/scala-macros/docs/src/pages/setup/projects.md",
+		"/Users/dave/dev/projects/scala-macros/docs/src/pages/setup/configurations.md",
+		"/Users/dave/dev/projects/scala-macros/code/build.sbt",
+		"/Users/dave/dev/projects/scala-macros/code/intro/hello/src/main/scala/HelloMacros.scala",
+		"/Users/dave/dev/projects/scala-macros/code/intro/hello/src/test/scala/HelloWorldSpec.scala",
+		"/Users/dave/dev/projects/scala-macros/code/intro/hello/src/test/scala/HelloMacrosSpec.scala",
+		"/Users/dave/dev/projects/scala-macros/scala-macros.sublime-project",
 		"/Users/dave/dev/projects/scala-macros/docs/src/pages/intro/hello.md",
 		"/Users/dave/dev/projects/scala-macros/docs/src/pages/setup/index.md",
 		"/Users/dave/dev/projects/scala-macros/docs/src/pages/index.md",
@@ -798,12 +803,7 @@
 		"/Users/dave/dev/projects/cartographer/api/app/controllers/SurveyController.scala",
 		"/Users/dave/dev/projects/cartographer/api/app/controllers/UploadController.scala",
 		"/Users/dave/dev/projects/cartographer/.git/MERGE_MSG",
-		"/Users/dave/dev/projects/cartographer/ui/src/app/plugin/survey/thames21-litter-form.tpl.html",
-		"/Users/dave/dev/projects/cartographer/ui/src/app/vendor/bootstrap.less",
-		"/Users/dave/dev/projects/cartographer/ui/src/app/plugin/survey/royal-parks-camera-tracking.coffee",
-		"/Users/dave/dev/projects/cartographer/ui/src/app/form/select-buttons.tpl.html",
-		"/Users/dave/dev/projects/cartographer/ui/src/app/map/map-field.coffee",
-		"/Users/dave/dev/projects/cartographer/api/app/cartographer/model/survey/RoyalParksCameraTrackingSurvey.scala"
+		"/Users/dave/dev/projects/cartographer/ui/src/app/plugin/survey/thames21-litter-form.tpl.html"
 	],
 	"find":
 	{
@@ -811,7 +811,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 108.0,
 		"where_history":
 		[
 			"*.scala,*.coffee,*.html,*.less",
@@ -949,6 +949,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"HelloWorld",
 			"group",
 			"nav_toc",
 			"group",
@@ -1075,8 +1076,7 @@
 			"mapFormat",
 			"Minus",
 			"Plus",
-			"AA",
-			" \""
+			"AA"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1084,6 +1084,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"HelloMacros",
 			"ctoparasite",
 			"royalParksHedgehogSex",
 			"RoyalParksHedgehogSex",
@@ -1210,8 +1211,7 @@
 			"crtLog)",
 			"crtLog,",
 			"crtLog.",
-			"crtLogProvider",
-			"iver"
+			"crtLogProvider"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1798,7 +1798,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 157.0,
+	"side_bar_visible": true,
+	"side_bar_width": 291.0,
 	"status_bar_visible": true
 }

@@ -1,10 +1,56 @@
-@import "bootstrap.less";
-@import "custom-variables.less";
-@import "syntax.less";
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
 
-#content > *:first-child {
-  margin-top: 0;
-}
+// Reset
+@import "normalize.less";
+// @import "print.less";
+
+// Core CSS
+@import "scaffolding.less";
+@import "type.less";
+@import "code.less";
+@import "grid.less";
+@import "tables.less";
+@import "forms.less";
+@import "buttons.less";
+
+// Components
+@import "component-animations.less";
+@import "glyphicons.less";
+@import "dropdowns.less";
+@import "button-groups.less";
+@import "input-groups.less";
+@import "navs.less";
+@import "navbar.less";
+@import "breadcrumbs.less";
+@import "pagination.less";
+@import "pager.less";
+@import "labels.less";
+@import "badges.less";
+@import "jumbotron.less";
+@import "thumbnails.less";
+@import "alerts.less";
+@import "progress-bars.less";
+@import "media.less";
+@import "list-group.less";
+@import "panels.less";
+@import "wells.less";
+@import "close.less";
+
+// Components w/ JavaScript
+@import "modals.less";
+@import "tooltip.less";
+@import "popovers.less";
+@import "carousel.less";
+
+// Utility classes
+@import "utilities.less";
+@import "responsive-utilities.less";
+
+// Course-specific
+@import "custom-variables.less";
+@import "syntax-screen.less";
 
 .nav-toc {
   padding: 0;
@@ -59,7 +105,60 @@
   }
 }
 
-img.center {
-  display: block;
-  margin: (@line-height-computed / 2) auto;
+#content {
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: (@line-height-computed / 2) auto;
+  }
+}
+
+// Ah hahahahahaaa! Have all the nested lists in the WORLD!
+ol {
+  list-style-type: decimal;
+  ol {
+    list-style-type: lower-alpha;
+    ol {
+      list-style-type: lower-roman;
+      ol {
+        list-style-type: decimal;
+        ol {
+          list-style-type: lower-alpha;
+          ol {
+            list-style-type: lower-roman;
+            ol {
+              list-style-type: decimal;
+              ol {
+                list-style-type: lower-alpha;
+                ol {
+                  list-style-type: lower-roman;
+                  ol {
+                    list-style-type: decimal;
+                    ol {
+                      list-style-type: lower-alpha;
+                      ol {
+                        list-style-type: lower-roman;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footnotes {
+  border-top: 1px solid @hr-border;
+  border-bottom: 1px solid @hr-border;
+  margin: @line-height-computed 0;
+  padding: @line-height-computed 0 @line-height-computed/2;
+  font-size: @font-size-base * 0.8;
 }

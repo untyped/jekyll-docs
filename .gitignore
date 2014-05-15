@@ -2,6 +2,8 @@
 
 /docs/bower_components/
 /docs/node_modules/
+/docs/jekyll_plugins/
+/docs/core-macros/
 /docs/_site/
 
 /docs/static/css/screen.css
